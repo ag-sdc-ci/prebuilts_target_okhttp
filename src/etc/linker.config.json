@@ -1,0 +1,21 @@
+{
+	"provideLibs": [	
+		    "libdummy_ext_okhttp-x86_64-v2.so",
+		    "libdummy_ext_okhttp.so",
+		    "libdummy_shared_okhttp-norepackage-x86_64-v2.so",
+		    "libdummy_shared_okhttp-norepackage.so",
+		    "libdummy_shared_okhttp-urlconnection-x86_64-v2.so",
+		    "libdummy_shared_okhttp-urlconnection.so",
+		    "libdummy_shared_okhttp-ws-x86_64-v2.so",
+		    "libdummy_shared_okhttp-ws.so",
+		    "libdummy_shared_okhttp-x86_64-v2.so",
+		    "libdummy_shared_okhttp.so",
+		    "libdummy_shared_okhttp_norepackage-x86_64-v2.so",
+		    "libdummy_shared_okhttp_norepackage.so",
+		    "libdummy_shared_okhttp_urlconnection-x86_64-v2.so",
+		    "libdummy_shared_okhttp_urlconnection.so",
+		    "libdummy_shared_okhttp_ws-x86_64-v2.so",
+		    "libdummy_shared_okhttp_ws.so"
+	],
+	"visible": true
+}

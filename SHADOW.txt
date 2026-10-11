@@ -1,0 +1,6 @@
+shadow prebuilt repo: okhttp (target, extractive payload, prefixes as-built upstream)
+  upstream: external/okhttp
+  api-level: 34 (local ag-build rebuild 2026-10-11, branch 34-20261011)
+  blobs: org.blisslabs.ag.ext.okhttp.apex 
+  src: extracted base payload + regenerated root Android.bp (gen_extractive_bp.py)
+  date: 2026-10-11
