@@ -5,13 +5,14 @@ package {
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
-java_library {
+java_import {
     name: "okhttp",
-    hostdex: true,
-    installable: true,
-    sdk_version: "none",
-    system_modules: "core-all-system-modules",
-    static_libs: ["okhttp-prebuilt"],
+    jars: [
+        "src/share/okhttp/okhttp-2.7.5.jar",
+    ],
+    host_supported: true,
+    prefer: true,
+    min_sdk_version: "31",
     apex_available: [
         "com.android.art",
         "com.android.art.debug",
@@ -26,6 +27,13 @@ java_import {
         "src/share/okhttp/okhttp-2.7.5.jar",
     ],
     host_supported: true,
+    min_sdk_version: "31",
+    apex_available: [
+        "com.android.art",
+        "com.android.art.debug",
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
 }
 
 
@@ -36,6 +44,12 @@ java_import {
     ],
     host_supported: true,
     prefer: true,
+    sdk_version: "core_current",
+    min_sdk_version: "28",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
 }
 
 java_import {
@@ -45,6 +59,12 @@ java_import {
     ],
     host_supported: true,
     prefer: true,
+    sdk_version: "core_current",
+    min_sdk_version: "28",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
 }
 
 java_import {
@@ -54,6 +74,12 @@ java_import {
     ],
     host_supported: true,
     prefer: true,
+    sdk_version: "core_current",
+    min_sdk_version: "28",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
 }
 
 java_defaults {
@@ -64,4 +90,24 @@ java_defaults {
     "-Xep:TryFailThrowable:WARN",
     ],
     },
+}
+
+filegroup {
+    name: "okhttp_api_files",
+    visibility: [
+        "//visibility:public",
+    ],
+    srcs: [
+        "Empty.java",
+    ],
+}
+
+filegroup {
+    name: "okhttp_impl_files",
+    visibility: [
+        "//visibility:public",
+    ],
+    srcs: [
+        "Empty.java",
+    ],
 }
